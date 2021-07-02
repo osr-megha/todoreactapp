@@ -11,3 +11,135 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main_div{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: black;
+  background: darkolivegreen;
+}
+
+.center_div{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.addItems{
+  background-color: lightgray;
+  width: auto;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+input {
+  background-color: lightgray;
+  width: auto;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: black;
+}
+
+
+.fa-plus{
+  cursor:pointer;
+  margin-left: -2rem;
+}
+
+.fa-plus:hover{
+  color:blue
+}
+
+
+.fa-trash-alt{
+  cursor:pointer;
+}
+
+.fa-trash-alt:hover{
+  color:red;
+}
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  
+  border: 2px solid black;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+.eachItem {
+  background: #fff;
+  padding: 5px;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  margin: 20px;
+  min-width: auto;
+  word-break: break-word;
+  background: lightgray;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-decoration: black;
+  text-align: center;
+}
+
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  margin: 0 auto;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.effect04:hover {
+  background-color: rgb(85, 41, 220);
+}
+
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+}
+
